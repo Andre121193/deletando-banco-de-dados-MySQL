@@ -20,7 +20,7 @@ public class Program {
 	
 			st = conn.prepareStatement(
 					"DELETE FROM seller "
-					+ "WHERE "
+					+ "WHERE " //if you don't use where from it the entire database
 					+ "Id = ?");
 
 			st.setInt(1, 8);
